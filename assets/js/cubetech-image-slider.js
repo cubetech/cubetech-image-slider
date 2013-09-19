@@ -95,9 +95,7 @@ function slider(where) {
 		}
 		// once the left or right image ordering has been finished, the css position 'left:' is resetted to -200px since the reording of the image elements after the jQuery animation has now been completed. This is done because the jQuery animation portion changed this css property and if left by itself, will eventually take the unordered list element off of the visible screen area.
 		
-		if (matchMedia('(min-width: 993px) and (max-width: 1200px)').matches) { 
-  			jQuery('.cubetech-image-slider').css({'left' : '-941px'});
-  		} else if (matchMedia('(min-width: 321px) and (max-width: 767px)').matches){
+		if (matchMedia('(min-width: 321px) and (max-width: 767px)').matches){
 	  		jQuery('.cubetech-image-slider').css({'left' : '-450px'});
   		} else if(matchMedia('(max-width: 320px)').matches) {
 	  		jQuery('.cubetech-image-slider').css({'left' : '-290px'});
